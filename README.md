@@ -1,10 +1,12 @@
 # homebrew-tap
 
-Homebrew tap for [bylaaabs](https://github.com/bylaaabs) casks and formulae.
+Homebrew tap for [laaabs](https://github.com/bylaaabs) casks and formulae. A small studio shipping native, open-source apps for Apple platforms.
+
+> Repo lives at `github.com/bylaaabs/homebrew-tap` because `laaabs` wasn't available as an org name on GitHub. The brand is **laaabs**.
 
 ## Usage
 
-Install any bylaaabs app directly:
+Install any laaabs app directly:
 
 ```sh
 brew install --cask bylaaabs/tap/<cask-name>
