@@ -1,6 +1,6 @@
 # homebrew-tap
 
-Homebrew tap for [laaabs](https://github.com/bylaaabs) — a small studio shipping native, open-source apps for Apple platforms.
+Homebrew tap for [laaabs](https://laaabs.com) — a small studio shipping native, open-source apps for Apple platforms.
 
 ## Usage
 
