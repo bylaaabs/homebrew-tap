@@ -7,8 +7,8 @@
 #   brew install --cask baaar
 
 cask "baaar" do
-  version "0.3.0-alpha.3"
-  sha256 "88510e17682a1fb9452beb1668685e9defffb3211d23b87edde8773bd81363b3"
+  version "0.3.0-alpha.5"
+  sha256 "f283d643fdf2adcfb440f26e68e8c4d83ac3903f818b2d2a50c8026f3c761eba"
 
   url "https://github.com/bylaaabs/baaar/releases/download/v#{version}/Baaar-#{version}.dmg"
   name "Baaar"
