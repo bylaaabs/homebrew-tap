@@ -16,7 +16,9 @@ That's equivalent to `brew tap bylaaabs/tap && brew install --cask <cask-name>`.
 
 | Cask | Description | Repo |
 |---|---|---|
+| [`baaar`](Casks/baaar.rb) | Native macOS menu-bar manager — open-source alternative to Ice / Bartender | [bylaaabs/baaar](https://github.com/bylaaabs/baaar) |
 | [`clipboaaard`](Casks/clipboaaard.rb) | Native, open-source clipboard manager for macOS | [bylaaabs/clipboaaard](https://github.com/bylaaabs/clipboaaard) |
+| [`speaaak`](Casks/speaaak.rb) | Native, on-device dictation for macOS — Whispr Flow-style ergonomics, audio never leaves your Mac | [bylaaabs/speaaak](https://github.com/bylaaabs/speaaak) |
 
 _More coming soon._
 
@@ -24,6 +26,8 @@ _More coming soon._
 
 ```sh
 brew install --cask bylaaabs/tap/clipboaaard
+brew install --cask bylaaabs/tap/baaar
+brew install --cask bylaaabs/tap/speaaak
 ```
 
 ## Uninstall
