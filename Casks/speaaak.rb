@@ -1,6 +1,6 @@
 cask "speaaak" do
-  version "0.1.0-alpha.1"
-  sha256 "2f3d86dce3a28febd5151870506aa14c094d01074b98a9f3679b70b7ebcbadff"
+  version "0.1.0-alpha.2"
+  sha256 "11c8a3da0ba4ae43bcc859761c473fec1afe5ff12eaa8c803c919d95ecfb3a95"
 
   url "https://github.com/bylaaabs/speaaak/releases/download/v#{version}/Speaaak-v#{version}.zip",
       verified: "github.com/bylaaabs/speaaak/"
