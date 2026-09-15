@@ -1,29 +1,25 @@
-# Source for the bylaaabs/homebrew-tap cask.
-#
-# Copy this file to https://github.com/bylaaabs/homebrew-tap/Casks/baaar.rb
-# on each release, updating `version` and `sha256`. Users install with:
-#
-#   brew tap bylaaabs/tap
-#   brew install --cask baaar
-
 cask "baaar" do
-  version "0.3.0-alpha.5"
-  sha256 "f283d643fdf2adcfb440f26e68e8c4d83ac3903f818b2d2a50c8026f3c761eba"
+  version "0.1.0"
+  sha256 "34154e44cc611e856fd065eed07226efe0856d08f210c982b609695c30b3eb4d"
 
-  url "https://github.com/bylaaabs/baaar/releases/download/v#{version}/Baaar-#{version}.dmg"
-  name "Baaar"
-  desc "Reliable, native menu bar manager for macOS — open-source alternative to Ice and Bartender"
+  url "https://github.com/bylaaabs/baaar/releases/download/v#{version}/baaar-v#{version}.zip",
+      verified: "github.com/bylaaabs/baaar/"
+  name "baaar"
+  desc "Native menu bar manager"
   homepage "https://github.com/bylaaabs/baaar"
 
-  depends_on macos: ">= :sequoia"
+  # No Sparkle yet: brew upgrade is the only update path.
+  auto_updates false
+  # baaar runs on macOS 27 only. Homebrew 7.0 names it :golden_gate, which
+  # parses as ">= 27"; older Homebrew does not know the symbol.
+  depends_on macos: :golden_gate
 
-  app "Baaar.app"
+  app "baaar.app"
 
   zap trash: [
-    "~/Library/Application Support/Baaar",
-    "~/Library/Caches/com.aaangelmartin.Baaar",
-    "~/Library/Caches/com.aaangelmartin.Baaar.ShipIt",
-    "~/Library/Preferences/com.aaangelmartin.Baaar.plist",
-    "~/Library/Saved Application State/com.aaangelmartin.Baaar.savedState",
+    "~/Library/Caches/com.laaabs.baaar",
+    "~/Library/Logs/baaar",
+    "~/Library/Preferences/com.laaabs.baaar.plist",
+    "~/Library/Saved Application State/com.laaabs.baaar.savedState",
   ]
 end
