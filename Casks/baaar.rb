@@ -2,8 +2,7 @@ cask "baaar" do
   version "0.1.0"
   sha256 "34154e44cc611e856fd065eed07226efe0856d08f210c982b609695c30b3eb4d"
 
-  url "https://github.com/bylaaabs/baaar/releases/download/v#{version}/baaar-v#{version}.zip",
-      verified: "github.com/bylaaabs/baaar/"
+  url "https://github.com/bylaaabs/baaar/releases/download/v#{version}/baaar-v#{version}.zip"
   name "baaar"
   desc "Native menu bar manager"
   homepage "https://github.com/bylaaabs/baaar"
