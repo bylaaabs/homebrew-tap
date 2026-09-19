@@ -1,0 +1,10 @@
+# service.yaml - what this repo is. must agree with infra/map/services.yaml; ci runs
+# `node infra/scripts/check.mjs service.yaml`. schema and examples: infra/schema/service.yaml.
+name: homebrew-tap
+hostname: null
+kind: data
+language: ruby
+build: none
+deploy: none - brew tap bylaaabs/tap reads main
+runs_on: null
+owner: product
